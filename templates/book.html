@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+	Book
+{% endblock %}
+
+{% block body %}
+	<br><h1 style="font-family: times">Book details</h1><hr><br>
+	<ul>			
+      <li>
+				Title: {{ book.title }}
+			</li>
+      <li>
+				Author: {{ book.author }}
+			</li>
+      <li>
+				Public Year: {{ book.public_year }}
+			</li>
+      <li>
+				ISBN: {{ book.isbn }}
+			</li>
+	</ul>
+
+{% endblock %}

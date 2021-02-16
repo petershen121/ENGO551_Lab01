@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+	Searched book result
+{% endblock %}
+
+{% block body %}
+	<br><h1 style="font-family: times">All books</h1><hr><br>
+	<ul>
+		{% for book in books %}
+			<li>
+				<a href="{{ url_for('book', book_id=book.id) }}">
+					Book title: {{ book.title }}, Author: {{ book.author }}, publiced in: {{ book.public_year }}
+				</a>
+			</li>
+		{% endfor %}
+	</ul>
+{% endblock %}

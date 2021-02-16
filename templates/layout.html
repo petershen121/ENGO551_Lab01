@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<style>
+body {
+	background-color:#ebebe0;
+}
+table{
+	font-family: $myFont;
+	border-collapse: collapse;
+	width:70%;
+}
+p{
+	margin: 0px;
+	font-family: arial;
+	width:80%;
+	font-size:130%;
+	line-height: 1.8;
+	page-break-before: always
+}
+h1{
+	font-family: times;
+	font-size:250%;
+	text-align: center;
+}
+h2{
+	font-style:italic;
+	font-size:200%;
+}
+
+h3{
+	font-size:175%;
+	font-family:times;
+}
+ul,li{
+	font-family: arial;
+	padding: 0px;
+	margin: 8px;
+	line-height: 1.0;
+}
+</style>
+	<head>
+		<title>{% block title %}{% endblock %}</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	</head>
+	<body>
+		<div class="container">
+			{% block body %}
+			{% endblock %}
+		</div>
+	</body>
+</html>
